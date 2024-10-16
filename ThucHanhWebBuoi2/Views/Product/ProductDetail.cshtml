@@ -1,0 +1,370 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<style>
+   .sanpham{
+       height:max-content;
+   }
+    .TrangSP {
+        padding-left: 5%;
+        /*background-color: antiquewhite;*/
+    }
+
+    .slideshow-container {
+        float: left;
+        width: 100%;
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+    }
+
+    .slideshow-image {
+        display: none;
+        width: 100%;
+    }
+
+    .active {
+        display: block;
+    }
+
+
+    .dot-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .active-dot {
+        background-color: #717171;
+    }
+    /*#########################*/
+
+
+    .overlay {
+        background-color: white;
+        border-radius: 30px;
+        width: 50%;
+        height: 10%;
+        padding: 1%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        float: right;
+    }
+
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 5px;
+        margin-top: 0;
+    }
+
+    .Form-MuaHang, .Form-GioHang {
+        width: 60%;
+        height: 60%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+
+    .TTSP {
+        background-color: white;
+        border-radius: 30px;
+        width: 70%;
+        height: 10%;
+        padding: 5%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        float: right;
+    }
+</style>
+<section class="sanpham">
+    <div class="TrangSP">
+        <div>
+            <h2>Laptop HP Probook 450 G10 i7 1355U/16GB/512GB/Win11 (873D3PA)</h2>
+        </div><br />
+
+        <div class="slideshow-container">
+            <img class="slideshow-image" src="~/Content/images/1.jpg" />
+            <img class="slideshow-image" src="~/Content/images/2.jpg" />
+            <img class="slideshow-image" src="~/Content/images/3.jpg" />
+            <img class="slideshow-image" src="~/Content/images/4.jpg" />
+            <img class="slideshow-image" src="~/Content/images/5.jpg" />
+            <img class="slideshow-image" src="~/Content/images/6.jpg" />
+            <img class="slideshow-image" src="~/Content/images/7.jpg" />
+            <div class="dot-container">
+                <span class="dot active-dot" onclick="showImage(0)"></span>
+                <span class="dot" onclick="showImage(1)"></span>
+                <span class="dot" onclick="showImage(2)"></span>
+                <span class="dot" onclick="showImage(3)"></span>
+                <span class="dot" onclick="showImage(4)"></span>
+                <span class="dot" onclick="showImage(5)"></span>
+                <span class="dot" onclick="showImage(6)"></span>
+            </div>
+        </div>
+    </div>
+    <div id="DinhDang" class="DinhDang">
+        <div id="Wrapper" class="overlay">
+            <form action="login">
+                <br>
+                <img src="~/Content/images/ads1.png" style="width: 90%" />
+                <img src="~/Content/images/ads2.png" style="width: 90%" /><br /><br />
+                <p style="float: left;">Mua ngay chỉ với giá</p> <br />
+                <p style="font-size: 350%;float: left;">27.999.999₫ </p><br><br /><br><br />
+                <p style="float: left; text-decoration: line-through;">32.199.999₫ </p> <br /><p style="float: left;">  ( Giảm 15% )</p><br /><br /><br />
+                <div class="button-container">
+                    <button type="submit" value="" class="Form-MuaHang"> Mua ngay </button>
+                    <button type="submit" value="" class="Form-GioHang">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+
+                </div>
+            </form>
+            <br>
+
+        </div>
+    </div>
+    <!-- ################################## -->
+    <div class="TTSP">
+
+        <form action="login">
+            <br>
+            <h2>THÔNG TIN SẢN PHẨM</h2>
+            <table style="width: 100%; text-align: left;" border="0" cellpadding="5" class="DinhDangTTSP">
+                <tr>
+                    <th colspan="2">Bộ xử lý</th>
+                </tr>
+                <tr>
+                    <td>Công nghệ CPU:</td>
+                    <td>Intel Core i7 Raptor Lake - 1355U</td>
+                </tr>
+                <tr>
+                    <td>
+                        Số nhân:
+                    </td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>
+                        Số luồng:
+                    </td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>
+                        Tốc độ CPU:
+                    </td>
+                    <td>
+                        1.7GHz
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tốc độ tối đa:
+                    </td>
+                    <td>Turbo Boost 5.0 Ghz</td>
+                </tr>
+                <tr>
+                    <td>
+                        Bộ nhớ đệm:
+                    </td>
+                    <td>
+                        12 MB
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table style="width: 100%;text-align:left;" border="0" cellpadding="5">
+                <tr>
+                    <th colspan="2">Bộ nhớ RAM, Ổ cứng</th>
+                </tr>
+                <tr>
+                    <td>
+                        RAM:
+                    </td>
+                    <td>16 GB</td>
+                </tr>
+                <tr>
+                    <td>
+                        Loại RAM:
+                    </td>
+                    <td>DDR4 2 khe ( 1 khe 16 GB + 1 khe rời )</td>
+                </tr>
+                <tr>
+                    <td>
+                        Tốc độ Bus RAM:
+                    </td>
+                    <td>
+                        3200 MHz
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hỗ trợ RAM tối đa:
+                    </td>
+                    <td>
+                        32 GB
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ổ cứng:
+                    </td>
+                    <td>512 GB SSD NVMePCle</td>
+                </tr>
+            </table>
+            <br />
+            <table style="width: 100%;text-align:left;" border="0" cellpadding="5">
+                <tr>
+                    <th colspan="2">Màn hình</th>
+                </tr>
+                <tr>
+                    <td>
+                        Màn hình:
+                    </td>
+                    <td>
+                        15.6"
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Độ phân giải:
+                    </td>
+                    <td>Full HD (1920 x 1080) </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tần số quét:
+                    </td>
+                    <td>60Hz</td>
+                </tr>
+                <tr>
+                    <td>
+                        Độ phủ màu:
+                    </td>
+                    <td>
+                        45% NTSC
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Công nghệ màn hình:
+                    </td>
+                    <td>Tấm nền IPS chống chói Anti Glare 250 nits</td>
+                </tr>
+                <br />
+
+            </table><br />
+            <table style="width: 100%; text-align: left;" border="0" cellpadding="5">
+                <tr>
+                    <th colspan="2">Đồ họa và âm thanh</th>
+                </tr>
+                <tr>
+                    <td>
+                        Card màn hình:
+                    </td>
+                    <td>Card tích hợp - Intel UHD Graphics (Iris Xe Graphics chỉ hoạt động với RAM kênh đôi)</td>
+                </tr>
+                <tr>
+                    <td>
+                        Công nghệ âm thanh:
+                    </td>
+                    <td>Realtek High Definition Audio</td>
+                </tr>
+                <br />
+            </table>
+            <br />
+            <table style="width: 100%;text-align:left;" border="0" cellpadding="5">
+                <tr>
+                    <th colspan="2">Cổng kết nối tính năng mở rộng</th>
+                </tr>
+                <tr>
+                    <td>
+                        Cổng giao tiếp:
+                    </td>
+                    <td>
+                        LAN (RJ45),
+                        Jack tai nghe 3.5 mm,
+                        2 x USB Type-A,
+                        HDMI,
+                        2 x USB Type-C (hỗ trợ USB Power Delivery, DisplayPort 2.1)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Kết nối không dây:
+                    </td>
+                    <td>
+                        Wi-Fi 6E (802.11ax),
+                        Bluetooth 5.3
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Webcam:
+                    </td>
+                    <td>HD webcam</td>
+                </tr>
+                <tr>
+                    <td>
+                        Tính năng khác:
+                    </td>
+                    <td>
+                        Bảo mật vân tay
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Đèn bàn phím:
+                    </td>
+                    <td>Đơn sắc - Màu trắng</td>
+                </tr>
+
+
+            </table>
+        </form>
+        <br>
+    </div>
+
+</section>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slideshow-image");
+    const dots = document.querySelectorAll(".dot");
+
+    function showImage(index) {
+        slides[currentSlide].classList.remove("active");
+        dots[currentSlide].classList.remove("active-dot");
+
+        currentSlide = index;
+
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active-dot");
+    }
+
+    function autoSlide() {
+        let nextSlide = (currentSlide + 1) % slides.length;
+        showImage(nextSlide);
+    }
+
+    setInterval(autoSlide, 3000); // Tự động chuyển ảnh sau 3 giây
+
+</script>
+    

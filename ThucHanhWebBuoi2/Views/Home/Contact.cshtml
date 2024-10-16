@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<style>
+  h2{
+     color:red;
+  }
+    .lienhe {
+        margin-left: 20px;
+        margin-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+    }
+
+    #cardlh {
+        margin-right: 3%
+    }
+    .bg-secondary {
+        background-color:yellow;
+    }
+    .bg-danger { 
+        background-color: coral;
+    }
+
+    .card {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-radius: 4px;
+        flex-direction: column;
+        display: flex;
+    }
+    .cardheader{
+        background-color:orange;
+        border-top: 2px solid black;
+        border-bottom:2px solid black;
+        border-radius: 4px;
+        text-align:center;
+        
+    }
+   
+</style>
+<h2>THÔNG TIN LIÊN HỆ CỬA HÀNG</h2>
+<div class="lienhe">
+    <div id="cardlh" class="card text-white bg-secondary mb-3" style="max-width:18rem">
+        <div class="cardheader">
+            <srtong><i class="fas fa-map-marked"> &nbsp;CƠ SỞ 1: quận 10</i></srtong>
+        </div>
+        <div class="diachicoso">
+            <h5>ĐỊA CHỈ:&nbsp;<a href="https://maps.app.goo.gl/ddQFktMUSi2zYGrPA">828 Su Van Hanh, Ward 13, District 10, Ho Chi Minh City, Vietnam</a></h5>
+            <p>Thời gian làm việc Thứ Hai - Thứ Sáu: 8:00 - 18:00 Thứ Bảy: 9:00 - 17:00 Chủ Nhật: Nghỉ</p>
+            <p>Điện thoại: 028 xxx xxxx</p>
+            <p>Email: Huflitso1vn@gmail.com</p>
+        </div>
+    </div>
+    <div id="cardlh" class="card text-white bg-success mb-3" style="max-width:18rem">
+        <div class="cardheader">
+            <srtong><i class="fas fa-map-marked"> &nbsp;CƠ SỞ 2: Hóc Môn</i></srtong>
+        </div>
+        <div class="diachicoso">
+            <h5>ĐỊA CHỈ:&nbsp;<a href="https://maps.app.goo.gl/3YJCGmsoHi1LKtuUA">806 QL22, ấp Mỹ Hoà 3, Hóc Môn, Hồ Chí Minh, Việt Nam</a></h5>
+            <p>Thời gian làm việc Thứ Hai - Thứ Sáu: 8:00 - 18:00 Thứ Bảy: 9:00 - 17:00 Chủ Nhật: Nghỉ</p>
+            <p>Điện thoại: 028 xxx xxxx</p>
+            <p>Email: Huflitso1vn@gmail.com</p>
+        </div>
+    </div>
+    <div id="cardlh" class="card text-white bg-danger mb-3" style="max-width:18rem">
+        <div class="cardheader">
+            <srtong><i class="fas fa-map-marked">&nbsp;CƠ SỞ 3: quận Tân Bình</i></srtong>
+        </div>
+        <div class="diachicoso">
+            <h5>ĐỊA CHỈ:&nbsp;<a href="https://maps.app.goo.gl/1Lp8XfkqVFHQ3GL86">52-70 Ba Gia, Phường 7, Tân Bình, Hồ Chí Minh, Việt Nam</a></h5>
+            <p>Thời gian làm việc Thứ Hai - Thứ Sáu: 8:00 - 18:00 Thứ Bảy: 9:00 - 17:00 Chủ Nhật: Nghỉ</p>
+            <p>Điện thoại: 028 xxx xxxx</p>
+            <p>Email: Huflitso1vn@gmail.com</p>
+        </div>
+    </div>
+</div>
+<h2>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn!</h2> 

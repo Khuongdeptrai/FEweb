@@ -1,0 +1,124 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<style type="text/css">
+    #banner{
+        background-image:url("../Content/images/bannertgdd.jpg");
+       /* background-size:cover;*/
+        background-position:center;
+        height:20px;
+        display:flex;
+        align-content:center;
+        justify-content:center;
+        color:black;
+        
+    }
+    .banner-content{
+        text-align:center;
+        color:black;
+    }
+    .banner-content h2{
+        font-size:2.5rem;
+        
+    }
+    .banner-content p{
+        font-size:2rem;
+    }
+    .btn{
+        display:inline-block;
+        padding:5px 20px;
+        background-color:orangered;
+        color:white;
+        text-decoration:none;
+        font-weight:bold;   
+    }
+    #product{
+       text-align:center;
+    }
+    #product h3{
+        font-size:2rem;
+    }
+    .prodcontainer{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+    .product-item img{
+        max-width:150px;
+    }
+    .product-item h3 {
+        font-size: 16px;
+        color: darkred;
+        margin: 10px 0px;
+    }
+    .product-item{
+        width:20%;
+    }
+    .proddes{
+            font-size:16px;
+            color:black;
+    }
+    .prodpri{
+        font-weight: bold;
+        font-size:18px;
+        color: red;
+    }
+   
+</style>
+
+<section id="banner">
+    <div class="banner-content">
+        @*<h2>CHÀO MỪNG ĐẾN VỚI TRANG WEB SỐ 1 VIỆT NAM</h2>
+        <p>Hàng Ngàn Sản Phẩm Đang Được Rao Bán</p>
+        <a href="#"class="btn">Bắt đầu mua sắm</a>*@
+    </div>
+</section>
+<section id="Content">
+    <div id="product" class="section">
+        <h3>SẢN PHẨM NỔI BẬT</h3>
+       
+        <div class="prodcontainer">
+           
+                <div class="product-item">
+                   <a href="~/Product/ProductDetail"><img src="~/Content/images/íp6.png" /></a>
+                    <h4>Iphone 16</h4>
+                    <p class="proddes">
+                        Chip Apple A18 Pro 6 nhân
+                        RAM: 8 GB
+                        Dung lượng: 512 GB
+                        Camera sau: Chính 48 MP & Phụ 48 MP, 12 MP
+                        Camera trước: 12 MP
+                        Pin 33 giờ, Sạc 20 W
+                    </p>
+                    <p class="prodpri">40.000.000vnđ</p>
+                </div>
+            
+        <div class="product-item">
+          <a href="#"> <img src="~/Content/images/ipad.jpg" /></a>
+            <h4>Ipad Pro M4 11inch WiFi</h4>
+            <p class="proddes">
+                Chip Apple M4 9 nhân
+                RAM 8 GB
+                Dung lượng 256 GB
+                Nghe gọi qua FaceTime
+                Pin 31.29 Wh, Sạc 20 W
+            </p>
+            <p class="prodpri">27.790.000vnđ</p>
+        </div>
+        <div class="product-item">
+           <a href="#"> <img src="~/Content/images/íp6.png" /></a>
+            <h4>Laptop Apple MacBook Pro 16 inch M3</h4>
+            <p class="proddes">
+                Màn hình: 16.2", Liquid Retina XDR display (3456 x 2234), 120Hz
+                CPU: Apple M3 Max, 400GB/s
+                Card: 30 nhân GPU
+                Pin: Lên đến 22 giờ
+                Khối lượng: 2.16 kg
+            </p>
+            <p class="prodpri">107.990.000vnđ</p>
+        </div>
+    </div>
+        </div>
+</section>
+
+

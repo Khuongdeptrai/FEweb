@@ -1,0 +1,164 @@
+﻿<style type="text/css">
+    html{
+        font-size:14px;
+        font-family:Arial;
+    }
+    body{
+        background-color: white;
+    }
+    #container{
+        border:none;
+        
+    }
+    header{
+        background-color: goldenrod;
+        border:2px solid #000000;
+        padding:10px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .logo img{
+        height:50px;
+    }
+    nav ul{
+        list-style-type:none;
+        display:flex;
+    }
+    nav ul li{
+        margin-left:20px;
+        font-size:1.2rem;
+    }
+    nav ul li a{
+        text-decoration:none;
+        color:black;
+        font-weight:bold;
+    }
+    section{
+        background-color:floralwhite;
+        min-height:300px;
+    }
+    .btn01 {
+        display: inline-block;
+        padding: 5px 20px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius:10px
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0, 15);
+        border-radius: 5px;
+        max-width: fit-content;
+        overflow: hidden;
+        height: 30px;   
+    }
+   .search input {
+        padding-inline: 5px;
+            padding-block: 5px;
+            border-radius: 10px;
+            border: 0px;
+            width: 300px;
+        }
+ /*  //===================================================================================//*/
+ .footer {
+       padding:15px 0px;
+      
+       font-size:16px;
+   }
+   .footer .footer-col{
+       text-align:center;
+   }
+   .footer-col{
+       float:left;
+       width:24%;  
+   }
+    .footer-col ul {
+        list-style: none;
+        margin-bottom:8px;
+    }
+    .footer-col a {
+        text-decoration:none;
+        color:black;
+    }
+    .rounded-pill{
+        border-radius:30px;
+    }
+
+</style>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TheGioiDiDongVIP</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="logo">
+               <a href="~/Home/Test"> <img src="~/Content/images/Untitled design.png" alt="logo" class=" logo rounded-pill" /></a>
+            </div>
+            <div class="search">                
+                <input type="text" >
+                <a class="btn01" style="border-left: 0.5px solid gray;">Tìm kiếm</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="~/Home/Test" class="btn">Trang Chủ</a></li>
+                    <li><a href="~/Product/ProductDetail" class="btn">Đăng Nhập</a></li>
+                    <li><a href="~/Product/ShoppingCart" class="btn">Giỏ Hàng</a></li>
+                    <li><a href="~/Home/Contact" class="btn">Liên Hệ</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+        
+        <section>
+            @RenderBody()
+        </section>
+        <footer class="footer" style="margin-top:10px">
+            <div class="footer-col">
+                <p class="title"><strong>tổng đài hỗ trợ</strong></p>
+                <p class="line"><span>gọi hỗ trợ:&nbsp;</span><a>0941142005</a></p>
+                <p class="line"><span>Complain:&nbsp;</span><a>0941142005</a></p>
+                <p class="line"><span>Bảo Hành:&nbsp;</span><a>0941142005</a></p>
+            </div>
+            <div class="footer-col">
+
+                <p class="title"><strong>tổng đài hỗ trợ</strong></p>
+                <ul>
+                    <li><a href="#>">About Company</a></li>
+                    <li><a href="#>">Recruitment</a></li>
+                    <li><a href="#>">send comments, Complain </a></li>
+                    <li><a href="#>">Find Store</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="title"><strong>Another Information</strong></p>
+                <ul>
+                    <li><a href="#>">Tích Điểm</a></li>
+                    <li><a href="#>">Lịch Sử Mua</a></li>
+                    <li><a href="#>">Dịch Vụ Vệ Sinh</a></li>
+                    <li><a href="#>">Tìm Hiểu Trả Góp</a></li>
+                    <li><a href="#>">Chính sách bảo hành</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="title"><strong>THÔNG TIN LIÊN HỆ</strong></p>
+                <p class="line"><span>TRỤ SỞ:&nbsp;</span><a>828 Đ. Sư Vạn Hạnh</a></p>
+                <p class="line"><span>EMAIL:&nbsp;</span><a>huflit.com.vn</a></p>
+                <p class="line"><span>WEBSITE:&nbsp;</span><a>https://huflit.edu.vn/</a></p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
