@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>TheGioiDiDong</title>
+</head>
+<body>
+    <header class="headerchinh">
+        <div>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li><a href=""><img style="width: 210px;" src="/TTSP/img/logotgdd.png" alt=""></a></li>
+                        <li><i class="fas fa-search"></i> <input type="text" placeholder="Bạn tìm gì..."></li>
+                        <li><a href=""></a><button><i class="far fa-user fa-lg"> </i>Đăng nhập</button></li>
+                        <li><a href=""></a><button><i class="fas fa-shopping-cart fa-lg"></i></i>Giỏ hàng</button></li>
+                        <li id="adress-form"><button><a style="font-size: 10px;" href="#"><pre><i class="fas fa-map-marker-alt fa-lg"></i>Hồ Chí Minh                                  </a><i class="fas fa-angle-right fa-sm"></i></pre></button></li>
+                        <div class="adress-form">
+                            <div class="adress-content">
+                                <h2>Chọn địa chỉ nhận hàng<span id="adress-close">X Đóng</span></h2>
+                                <form action="">
+                                    <p>Tạm thời chỉ nhận giao hàng trong TPHCM.</p>
+                                    <select name="id">
+                                        <option value="#">--Chọn địa điểm</option>
+                                        <option value="#">Thành Phố Hồ Chí Minh</option>
+                                    </select>
+                                    <select name="id">
+                                        <option value="#">--Vui lòng chọn quận/huyện</option>
+                                        <option value="#">Quận 1</option>
+                                        <option value="#">Quận 2</option>
+                                        <option value="#">Quận 3</option>
+                                        <option value="#">Quận 4</option>
+                                        <option value="#">Quận 5</option>
+                                        <option value="#">Quận 6</option>
+                                        <option value="#">Quận 7</option>
+                                        <option value="#">Quận 8</option>
+                                        <option value="#">Quận 10</option>
+                                        <option value="#">Quận 11</option>
+                                        <option value="#">Quận 12</option>
+                                        <option value="#">Quận Tân Bình</option>
+                                        <option value="#">Quận Tân Phú</option>
+                                        <option value="#">Quận Bình Tân</option>
+                                        <option value="#">Quận Bình Thạnh</option>
+                                        <option value="#">Quận Gò Vấp</option>
+                                        <option value="#">Quận Phú Nhuận</option>
+                                    </select>
+                                    <select name="id">
+                                        <option value="#">--Vui lòng chọn phường</option>
+                                        <option value="#">Phường 1</option>
+                                        <option value="#">Phường 2</option>
+                                        <option value="#">Phường 3</option>
+                                        <option value="#">Phường 4</option>
+                                        <option value="#">Phường 5</option>
+                                        <option value="#">Phường 6</option>
+                                        <option value="#">Phường 7</option>
+                                        <option value="#">Phường 8</option>
+                                        <option value="#">Phường 9</option>
+                                        <option value="#">Phường 10</option>
+                                        <option value="#">Phường 11</option>
+                                        <option value="#">Phường 12</option>
+                                        <option value="#">Phường 13</option>
+                                        <option value="#">Phường 14</option>
+                                        <option value="#">Phường 15</option>
+                                        <option value="#">Phường 16</option>
+                                        <option value="#">Phường 17</option>
+                                    </select>
+                                    <input type="text" placeholder="--Nhập địa chỉ cụ thể...">
+                                    <button>Xác nhận địa chỉ</button>
+                                </form>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <section class="menubar">
+                <div class="container">
+                    <div class="menu-content">
+                        <ul>
+                            <li><a href=""><i class="fas fa-mobile-alt"></i>Điện thoại</a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>Laptop</a></li>
+                            <li><a href=""><i class="fas fa-headphones-alt"></i>Phụ kiện<i style="margin-left: 3px;" class="fas fa-angle-down"></i></a></li>
+                            <li><a href=""><i class="fas fa-stopwatch"></i>SmartWatch</a></li>
+                            <li><a href=""><i class="fas fa-clock"></i>Đồng hồ</a></li>
+                            <li><a href=""><i class="fas fa-tablet-alt"></i>Tablet</a></li>
+                            <li><a href=""><i class="fas fa-hand-holding-usd"></i>Máy cũ, Thu cũ<i style="margin-left: 3px;" class="fas fa-angle-down"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop-code"></i>PC, Máy in<i style="margin-left: 3px;" class="fas fa-angle-down"></i></a></li>
+                            <li><a href=""><i class="fas fa-sim-card"></i>Sim, Thẻ cào</a></li>
+                            <li><a href=""><i class="far fa-list-alt"></i>Dịch vụ, Tiện ích<i style="margin-left: 3px;" class="fas fa-angle-down"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <br />
+
+    <div id="DinhDang" class="DinhDang">
+        <div id="Wrapper" class="overlay">
+            <form action="login">
+                <br>
+                <img src="img/banner1.png" style="width: 100%; height: 100px; border-radius:10px;" />
+                <img src="img/mau-banner-quang-cao-san-pham-15.jpg" style="width: 100%; height: 100px; border-radius:10px;" />
+                <br /><br />
+                <p style="float: left;">Mua ngay chỉ với giá</p> <br />
+                <p style="font-size: 350%;float: left;">17.990.000₫ </p><br><br /><br><br />
+                <p style="float: left; text-decoration: line-through;">22.990.000₫ </p> <br /><p style="float: left;">  ( Giảm 21% )</p><br /><br /><br />
+                <div class="button-container">
+                    <button type="submit" value="" class="Form-MuaHang"> Mua ngay </button>
+                    <button type="submit" value="" class="Form-GioHang">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                    <br />
+                </div>
+            </form>
+            <br>
+        </div>
+
+
+
+    </div>
+    <div class="TrangSP">
+        <div>
+            <h2>Điện thoại Xiaomi 14 5G 12GB/256GB</h2>
+        </div><br />
+
+        <div class="slideshow-container">
+            <img class="slideshow-image active" src="img/xiaomi 14/1.jpg" />
+            <img class="slideshow-image" src="img/xiaomi 14/2.jpg" />
+            <img class="slideshow-image" src="img/xiaomi 14/3.jpg" />
+            <img class="slideshow-image" src="img/xiaomi 14/4.jpg" />
+            <img class="slideshow-image" src="img/xiaomi 14/5.jpg" />
+            <img class="slideshow-image" src="img/xiaomi 14/6.jpg" />
+            <img class="slideshow-image" src="img/xiaomi 14/7.jpg" />
+            <img class="slideshow-image" src="img/xiaomi 14/8.jpg" />
+            <div class="dot-container">
+                <span class="dot active-dot" onclick="showImage(0)"></span>
+                <span class="dot" onclick="showImage(1)"></span>
+                <span class="dot" onclick="showImage(2)"></span>
+                <span class="dot" onclick="showImage(3)"></span>
+                <span class="dot" onclick="showImage(4)"></span>
+                <span class="dot" onclick="showImage(5)"></span>
+                <span class="dot" onclick="showImage(6)"></span>
+                <span class="dot" onclick="showImage(7)"></span>
+                <span class="dot" onclick="showImage(8)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- ################################## -->
+    <div class="TTSP">
+
+        <br>
+        <h2>THÔNG SO KỸ THUẬT</h2>
+        <table style="width: 100%; text-align: left;" border="0" cellpadding="5" class="DinhDangTTSP">
+            <tr>
+                <th colspan="2">Màn Hình</th>
+            </tr>
+            <tr>
+                <td>
+                    Công nghệ màn hình:
+                </td>
+                <td>
+                    Ultra Retina XDR
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Độ phân giải:
+                </td>
+                <td>
+                    1668 x 2420 Pixels
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Màn hình rộng:
+                </td>
+                <td>
+                    11" - Tần số quét 120 Hz
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table style="width: 100%;text-align:left;" border="0" cellpadding="5">
+            <tr>
+                <th colspan="2">Hệ điều hành & CPU</th>
+            </tr>
+            <tr>
+                <td>
+                    Hệ điều hành:
+                </td>
+                <td>
+                    iPadOS 17
+                </td>
+            </tr>
+            <hr />
+            <br />
+            <tr>
+                <td>
+                    Chip xử lý (CPU):
+                </td>
+                <td>
+                    Apple M4 9 nhân
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tốc độ CPU:
+                </td>
+                <td>
+                    Hãng không công bố
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Chip đồ hoạ (GPU):
+                </td>
+                <td>
+                    Apple GPU 10 nhân
+                </td>
+            </tr>
+        </table>
+        <br /><hr /><br />
+        <table style="width: 100%;text-align:left;" border="0" cellpadding="5">
+            <tr>
+                <th colspan="2">Bộ nhớ & Lưu trữ</th>
+            </tr>
+            <tr>
+                <td>
+                    RAM:
+                </td>
+                <td>
+                    8GB
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dung lượng lưu trữ:
+                </td>
+                <td>
+                    256 GB
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dung lượng còn lại (khả dụng) khoảng:
+                </td>
+                <td>
+                    241 GB
+                </td>
+            </tr>
+        </table>
+        <br /><hr /><br />
+        <table style="width: 100%; text-align: left;" border="0" cellpadding="5">
+            <tr>
+                <th colspan="2">Camera sau</th>
+            </tr>
+            <tr>
+                <td>
+                    Độ phân giải:
+                </td>
+                <td>
+                    12 MP
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Quay phim:
+                </td>
+                <td>
+                    <br />
+                    4K 2160p@30fps<br />
+                    HD 720p@30fps<br />
+                    FullHD 1080p@60fps<br />
+                    FullHD 1080p@30fps<br />
+                    FullHD 1080p@25fps<br />
+                    FullHD 1080p@240fps<br />
+                    FullHD 1080p@120fps<br />
+                    4K 2160p@60fps<br />
+                    4K 2160p@25fps<br />
+                    4K 2160p@24fps<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tính năng:
+                </td>
+
+                <td>
+                    Zoom kỹ thuật số<br />
+                    Xóa phông<br />
+                    Tua nhanh thời gian (Time‑lapse)<br />
+                    Toàn cảnh (Panorama)<br />
+                    Smart HDR 4<br />
+                    Quay video ProRes<br />
+                    Quay chậm (Slow Motion)<br />
+                    Live Photos<br />
+                    Gắn thẻ địa lý<br />
+                    Góc rộng<br />
+                    Chụp ảnh hàng loạt<br />
+                    Tự động lấy nét<br />
+                </td>
+            </tr>
+        </table>
+        <br /><hr /><br />
+        <table style="width: 100%;text-align:left;" border="0" cellpadding="5">
+            <tr>
+                <th colspan="2">Camera trước</th>
+            </tr>
+            <tr>
+                <td>
+                    Độ phân giải:
+                </td>
+                <td>
+                    12 MP
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dung lượng lưu trữ:
+                </td>
+                <td>
+                    Trôi nhanh thời gian (Time Lapse)<br />
+                    Xóa phông<br />
+                    Smart HDR 4<br />
+                    Quay video Full HD<br />
+                    Live Photos<br />
+                    Góc siêu rộng<br />
+                    Flash màn hình<br />
+                    Chụp ảnh hàng loạt<br />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="KhuyenMai">
+        <header>
+            <table>
+                <tr>
+                    <th><br /><h2>Khuyến Mãi</h2><h6>Giá và khuyến mãi dự kiến áp dụng đến 23:59 | 31/10</h6><br /></th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br /><br />
+                        &#10102; Phiếu mua hàng trị giá 200,000đ mua sim Mobifone 6MWG125<br /><br />
+                        &#10103; Thu cũ Đổi mới: Giảm thêm đến 2,000,000Đ (Áp dụng tuỳ model máy cũ, Không kèm ưu đãi thanh toán qua cổng, mua kèm)<br /><br />
+                        &#10104; Nhập mã VNPAYTGDD4 giảm từ 50,000đ đến 100,000đ (áp dụng tùy giá trị đơn hàng) khi thanh toán qua VNPAY-QR.<br /><br />
+                    </td>
+                </tr>
+            </table>
+
+        </header>
+    </div>
+    <div class="QuangCao">
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/banner2.png" style="width: 45%;border-radius: 5%;"/>
+                        <img src="img/banner3.png" style="width: 45%; border-radius: 5%;"/>
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+
+    <script src="js.js">
+
+
+    </script>
+
+    <footer class="footer">
+        <p>&copy; website of friendship.</p>
+    </footer>
+</body>
+
+</html>

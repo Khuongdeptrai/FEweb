@@ -1,0 +1,373 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 15%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: #FFD500;
+}
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        nav ul li, a {
+            color: black;
+            font-size: 16px;
+            padding: 1px;
+        }
+            /*------------------------------------------------------------------------------ Thanh search */
+            nav ul li:nth-child(2) {
+                position: relative;
+            }
+
+                nav ul li:nth-child(2) input {
+                    height: 28px;
+                    width: 308px;
+                    border-radius: 32px;
+                    border: none;
+                    padding-left: 28px;
+                    outline: none;
+                    font-size: 11px;
+                }
+
+                nav ul li:nth-child(2) i {
+                    position: absolute;
+                    font-size: 13px;
+                    left: 9px;
+                    color: #333;
+                    line-height: 28px;
+                }
+            /*------------------------------------------------------------------------------ ÄÄƒng nháº­p */
+            nav ul li:nth-child(3) button {
+                height: 33px;
+                padding: 0 9px;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                transition: all 0.3s ease;
+                border-radius: 32px;
+                font-size: 80%;
+            }
+
+                nav ul li:nth-child(3) button i {
+                    margin-right: 5px;
+                }
+
+                nav ul li:nth-child(3) button:hover {
+                    background-color: #ffeb86;
+                }
+            /*------------------------------------------------------------------------------ Giá» hÃ ng */
+            nav ul li:nth-child(4) button {
+                height: 33px;
+                padding: 0 9px;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                transition: all 0.3s ease;
+                border-radius: 32px;
+                font-size: 80%;
+            }
+
+                nav ul li:nth-child(4) button i {
+                    margin-right: 5px;
+                }
+
+                nav ul li:nth-child(4) button:hover {
+                    background-color: #ffeb86;
+                }
+            /*------------------------------------------------------------------------------ ÄChi nháº­n hÃ ng */
+            nav ul li:nth-child(5) button {
+                height: 33px;
+                padding: 0 9px;
+                cursor: pointer;
+                background-color: #ffe14c;
+                border: none;
+                transition: all 0.3s ease;
+                border-radius: 32px;
+                font-size: 11px;
+                float: right;
+                line-height: 0;
+            }
+
+                nav ul li:nth-child(5) button i {
+                    margin-right: 5px;
+                }
+
+                nav ul li:nth-child(5) button:hover {
+                    background-color: #ffeb86;
+                }
+/*================================================================================================================MenuBar=============================*/
+.menubar {
+    background-color: #FFD500;
+}
+
+    .menubar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .menubar ul li a {
+            font-size: 11px;
+        }
+
+        .menubar ul li {
+            padding: 5px 5px 6px 6px;
+            transition: all 0.3s ease;
+        }
+
+            .menubar ul li a i {
+                margin-right: 7px;
+                font-size: 11px;
+            }
+
+            .menubar ul li:hover {
+                background-color: #ffeb86;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+/*================================================================================================================Adress form=============================*/
+.adress-form {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0, 0, 0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+    /*giá trị lớn hơn model hộp thoại nổi lêb trên*/
+}
+
+.adress-content {
+    width: 385px;
+    height: 440px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+    .adress-content form {
+        padding: 13px 44px;
+    }
+
+    .adress-content h2 {
+        font-size: 16px;
+        padding: 14px 0;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        background-color: #FFD500;
+        border-radius: 5px;
+    }
+
+        .adress-content h2 span {
+            font-size: 11px;
+            display: block;
+            position: absolute;
+            height: 22px;
+            padding: 0 7px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            right: 15px;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: 22px;
+        }
+
+    .adress-content form p {
+        font-size: 14px;
+    }
+
+    .adress-content form input, select {
+        font-size: 14px;
+        height: 44px;
+        display: block;
+        width: 100%;
+        margin-top: 22px;
+        border: 1px solid #ddd;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    .adress-content form button {
+        margin-top: 22px;
+        height: 44px;
+        width: 100%;
+        cursor: pointer;
+        background-color: #FFD500;
+        color: black;
+        outline: none;
+        border: none;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+
+
+/*##################################################################*/
+.TrangSP {
+    padding-left: 5%;
+    /*background-color: antiquewhite;*/
+    z-index: 1;
+/*giá trị thấp hơp modal*/
+}
+
+.slideshow-container {
+    float: left;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-image {
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+/*#########################*/
+
+
+.overlay {
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    height: 10%;
+    padding: 1%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    float: right;
+    padding: 5%;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+    margin-top: 0;
+}
+
+.Form-MuaHang, .Form-GioHang {
+    width: 60%;
+    height: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.TTSP {
+    border-radius: 30px;
+    width: 50%;
+    height: 10%;
+    padding: 5%;
+    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    float: left;
+}
+    .TTSP table {
+    }
+
+.KhuyenMai {
+    float: right;
+    padding: 5%;
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
+}
+.KhuyenMai header table {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+.KhuyenMai th{
+    background-color:indianred;
+    border-radius: 30px;
+}
+.KhuyenMai td{
+    background-color:#F0FFFF;
+    text-align: left;
+    padding: 2%;
+}
+
+.QuangCao {
+    float: right;
+    padding: 3%;
+    width: 50%;
+    height: 10%;
+}
+
+
+
+
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+        font-family: Arial, sans-serif;
+    }
+
